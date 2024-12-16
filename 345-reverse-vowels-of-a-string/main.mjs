@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
 /**
+ * FIXME: Improve the following algorithm using two-pointer approach
+ *
  * @param {string} s
  * @return {string}
  */
