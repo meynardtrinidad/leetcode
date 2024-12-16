@@ -1,3 +1,5 @@
+import assert from 'node:assert/strict';
+
 /**
  * @param {number[]} flowerbed
  * @param {number} n
@@ -22,3 +24,6 @@ const canPlaceFlowers = function(flowerbed, n) {
 
   return count >= n
 };
+
+assert.equal(canPlaceFlowers([1, 0, 0, 0, 1], 1), true)
+assert.equal(canPlaceFlowers([1, 0, 0, 0, 1], 2), false)

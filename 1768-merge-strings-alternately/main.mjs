@@ -1,3 +1,5 @@
+import assert from 'node:assert/strict';
+
 /**
  * @param {string} word1
  * @param {string} word2
@@ -25,3 +27,7 @@ const mergeAlternately = function(word1, word2) {
 
   return mergedStr
 };
+
+assert.equal(mergeAlternately("abc", "pqr"), "apbqcr")
+assert.equal(mergeAlternately("ab", "pqrs"), "apbqrs")
+assert.equal(mergeAlternately("abcd", "pq"), "apbqcd")
